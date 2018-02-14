@@ -1,0 +1,6 @@
+{
+	"mongo" : {
+		"host" : "localhost",
+		"db" : "movies"
+	}
+}

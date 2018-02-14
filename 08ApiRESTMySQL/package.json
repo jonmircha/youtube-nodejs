@@ -1,0 +1,29 @@
+{
+  "name": "api-rest-mysql",
+  "version": "0.0.1",
+  "description": "Api REST MVC con MySQL, Express y Node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor server.js"
+  },
+  "keywords": [
+    "API",
+    "CRUD",
+    "REST",
+    "MVC",
+    "MySQL"
+  ],
+  "author": "@jonmircha",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "express-method-override": "0.0.3",
+    "jade": "^1.11.0",
+    "morgan": "^1.6.1",
+    "mysql": "^2.9.0",
+    "responsimple": "^1.0.1",
+    "serve-favicon": "^2.3.0"
+  }
+}

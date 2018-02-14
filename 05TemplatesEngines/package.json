@@ -1,0 +1,27 @@
+{
+  "name": "templates-engines",
+  "version": "0.0.1",
+  "description": "En este ejercicio veremos como usar los motores de plantillas Jade y EJS para las vistas de Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor server.js"
+  },
+  "keywords": [
+    "express",
+    "jade",
+    "ejs",
+    "templates",
+    "engines",
+    "nodejs"
+  ],
+  "author": "@jonmircha",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "morgan": "^1.6.1",
+    "serve-favicon": "^2.3.0"
+  }
+}

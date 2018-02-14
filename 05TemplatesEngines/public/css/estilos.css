@@ -1,0 +1,62 @@
+html {
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	background-color: #1D1D1D;
+	text-align: center;
+}
+
+a { color: #80BD01; }
+
+a:hover { color: rgba(128,189,1,.5); }
+
+li { list-style-position: inside; }
+
+#jade, #ejs {
+	font-size: 2rem;
+	border: medium solid #80BD01;
+	box-shadow: .25rem .25rem .5rem rgba(255, 255, 255, .5);
+}
+
+.container {
+	margin: auto;
+	padding: 1rem;
+	width: 80%;
+}
+
+#logo-node {
+	margin: auto;
+	height: 150px;
+	width: 450px;
+	background: transparent url('../img/nodejs-monitor.png') no-repeat center;
+	background-size: contain;
+}
+
+.boton {
+	border: 0;
+	font-size: 2rem;
+	color: #1D1D1D;
+	background-color: #80BD01;
+}
+
+.boton:hover {
+	color: #80BD01;
+	background-color: #DDD;
+	cursor: pointer;	
+}
+
+.item {
+	float: left;
+	width: 25%;
+}
+
+.error {
+	display: block;
+	margin: auto;
+	padding: 1rem;
+	width: 90%;
+	overflow-x:  scroll;
+	text-align: left;
+	background-color: #303030;
+	color: #80BD01;
+}

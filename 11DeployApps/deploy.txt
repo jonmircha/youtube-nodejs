@@ -1,0 +1,64 @@
+Referencias
+	https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean
+	https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server
+	https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
+	http://web.ua.es/cuantica/docencia/ccem/teoria/node127.html
+	http://marcecastro.com/como-conseguir-un-servidor-vps-gratis-con-amazon-windows-o-linux/
+
+Instalacion en UBUNTU
+
+Instalación simple pero con el detalle de que node se ejecuta como nodejs
+	sudo apt-get update
+	sudo apt-get install nodejs
+	sudo apt-get install npm
+	sudo apt-get install git
+
+Instalacion con Node Version Manager
+	sudo apt-get remove nodejs
+		
+	sudo apt-get install build-essential libssl-dev
+	
+	Ir a https://github.com/creationix/nvm
+
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash
+
+	source ~/.profile
+
+	nvm ls-remote
+	nvm install 5.3.0
+	nvm use 4.2.4
+	nvm ls
+
+Configurar un Servidor Proxy
+	sudo apt-get update
+	sudo apt-get install nginx
+
+	sudo vi /etc/nginx/sites-available/default
+
+	server {
+	    listen 80;
+
+	    server_name example.com;
+
+	    location / {
+	        proxy_pass http://APP_PRIVATE_IP_ADDRESS:3000;
+	        proxy_http_version 1.1;
+	        proxy_set_header Upgrade $http_upgrade;
+	        proxy_set_header Connection 'upgrade';
+	        proxy_set_header Host $host;
+	        proxy_cache_bypass $http_upgrade;
+	    }
+	}
+
+	sudo service nginx restart
+
+
+	sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
+
+	pm2 start archivo.js --watch
+
+
+Matar procesos
+	https://amatellanes.wordpress.com/2013/08/08/ubuntu-como-encontrar-y-matar-un-proceso-que-esta-usando-un-puerto-en-ubuntu/
+	sudo netstat -lpn | grep :3000
+	kill num_proceso
