@@ -1,0 +1,24 @@
+{
+  "name": "primeros-pasos-npm",
+  "version": "1.0.0",
+  "description": "En este proyecto aprendemos NPM",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan MirCha <jonmircha@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "responsimple": "^1.0.1",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "sass": "^1.64.2",
+    "serve": "^14.2.0"
+  }
+}

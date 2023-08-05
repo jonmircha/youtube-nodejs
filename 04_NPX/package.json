@@ -1,0 +1,13 @@
+{
+  "name": "04_npx",
+  "version": "1.0.0",
+  "description": "Aprendiendo a usar el comando npx",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
