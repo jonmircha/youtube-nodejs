@@ -1,0 +1,122 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+a,
+button {
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+  color: #333;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+button {
+  border: 0;
+  outline: 0;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+form {
+  margin: 2rem auto;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  border: thin solid #ddd;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.task-list {
+  margin-top: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.task-list li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 20px;
+  position: relative;
+}
+
+.task-list li.completed {
+  background-color: #ccc;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.complete-button {
+  background-color: #0c9344;
+  color: #fff;
+}
+
+.completed .complete-button {
+  display: none;
+}
+
+.uncomplete-button {
+  background-color: #333;
+  color: #fff;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.add-button,
+.edit-button {
+  background-color: #1e99ec;
+  color: #fff;
+}
+
+.back-button {
+  background-color: #666;
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

@@ -1,0 +1,21 @@
+extends layout
+
+block metas 
+  title Home de mi sitio con Express.js
+  meta(name="description", content="Descripción de la página del Home")
+
+block content
+  main.container
+    h1 Home de mi sitio
+    nav
+      ul
+        li
+          a(href="/contacto") Contacto (.html)
+        li
+          a(href="/git") Git (.md)
+        li
+          a(href="/nodejs") Node.js (.md)
+        li
+          a(href="/hola") Hola (.pug)
+        li
+          a(href="/nada") Error 404 (.pug)

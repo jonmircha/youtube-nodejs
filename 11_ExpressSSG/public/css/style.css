@@ -1,0 +1,25 @@
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: orangered;
+  transition: opacity 0.3s ease-out;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 1024px;
+  background-color: #ddd;
+}

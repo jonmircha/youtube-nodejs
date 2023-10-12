@@ -1,0 +1,15 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="icon", href="/img/favicon.png")
+    title= title ? title : "Artículo de Blog"
+  body
+    main.container
+      h1= title
+      hr
+      block content
+        != contentHTML
+    script(src="/js/main.js", type="module")
