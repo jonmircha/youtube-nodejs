@@ -8,7 +8,8 @@ import morgan from "morgan";
 
 const app = express();
 const port = process.env.PORT || 3000;
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
+//const __dirname = path.dirname(new URL(import.meta.url).pathname);
+const __dirname = process.cwd();
 
 app.use(morgan("dev"));
 app.use(express.json());
