@@ -1,0 +1,19 @@
+extends layout 
+
+block content 
+  main.container 
+    h1 Registro de Usuario
+    form(action="/signin" method="POST")
+      label(for="username") Usuario:
+      input(type="text", id="username", name="username", required)
+      br
+      label(for="password") Password:
+      input(type="password", id="password", name="password", required)
+      br
+      br
+      button.add-button(type="submit") Registrar
+      if newUser
+        br
+        br
+        p Nuevo usuario #[b #{username}] creado con éxito
+      a.back-button(href="/login") Iniciar Sesión

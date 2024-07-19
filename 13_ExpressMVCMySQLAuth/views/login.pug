@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+  main.container 
+    h1 Iniciar Sesión
+    form(action="/login" method="POST")
+      label(for="username") Usuario:
+      input(type="text", id="username", name="username", required)
+      br
+      label(for="password") Password:
+      input(type="password", id="password", name="password", required)
+      br
+      br
+      button.add-button(type="submit") Iniciar Sesión
+      a.back-button(href="/signin") Registrar
